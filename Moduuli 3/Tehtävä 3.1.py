@@ -1,7 +1,6 @@
-pituus = int(input("Anna kuhan pituus senttimetreinä: "))
-if pituus < 37:
-    puuttuu = 37 - pituus
-    print(f"Kuha on alamittainen, laske se takaisin järveen.")
-    print(f"Pituudesta puuttuu {puuttuu} cm vähimmäismitasta.")
+kuha = float(input("Anna kuhan pituus senttimetreinä: "))
+if kuha < 37:
+    puuttuva = 37 
+    print("Kuha on", puuttuva, "cm liian lyhyt, päästä se takaisin veteen.")
 else:
-    print("Kuha on pyyntimitan täyttävä, saat pitää sen.")
+    print("Kuha on tarpeeksi pitkä, voit pitää sen!")

@@ -1,9 +1,11 @@
-vuosi = int(input("Anna vuosiluku:"))
-if vuosi % 400 == 0:
-    print("Vuosi on karkausvuosi.")
-elif vuosi % 100 == 0:
-    print("Vuosi ei ole karkausvuosi.")
-elif vuosi % 4 == 0:
-    print("Vuosi on karkausvuosi.")
+vuosi = int(input("Anna vuosi: "))
+if vuosi % 4 == 0:
+    if vuosi % 100 == 0:
+        if vuosi % 400 == 0:
+            print(f"{vuosi} on karkausvuosi.")
+        else:
+            print(f"{vuosi} ei ole karkausvuosi.")
+    else:
+        print(f"{vuosi} on karkausvuosi.")
 else:
-    print("Vuosi ei ole karkausvuosi.")
+    print(f"{vuosi} ei ole karkausvuosi.")
